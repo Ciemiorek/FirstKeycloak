@@ -14,10 +14,10 @@ public class LogIn {
 
 @GetMapping("/start")
     public String start () {
-    return new String("This is start. Log in <a href=\"/user\">here");
+    return new String("This is start. Log in <a href=\"/user/start\">here");
 }
 
-@GetMapping("/user")
+@GetMapping("/user/start")
 //principal aby pobrac uzytkownika ma metode get name.
 // wylogowanie ma przyjac htttp serverrequest i wylogowac
     public String user(){
